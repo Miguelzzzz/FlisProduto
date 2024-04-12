@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-fundo: #fff7f7;
+    --cor-rosa-claro: #ffc8c4;
+    --cor-verde-claro: #90EE90;
+    --cor-nav-link: gray;
+    --cor3: #fa9897;
+    --cor4: #f84c58;
+    --corPagExercicio: #ededed;
+    --font-padrao: 'Raleway', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--corPagExercicio);
+}
+
+.container-calc-video {
+    margin: 80px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 70px;
+}
+
+.container-coluna {
+    margin-bottom: 60px;
+}
+
+h2 {
+    padding: 6px 22px;
+    font: 470 35px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: center;
+    border-radius: 18px;
+}
+
+h3 {
+    padding: 6px 20px;
+    font: normal 30px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: justify;
+    color: white;
+    
+
+}
+.video-vitrine{
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.titulo-caloria {
+    color: #636363;
+    background-color: white;
+}
+
+.titulo-video {
+    color: white;
+    background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+}
+
+section .container-form-calc, section .container-area-video {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    font: normal 20px var(--font-padrao);
+    background-color: white;
+    border-radius: 18px;
+}
+
+.container-form-calc {
+    background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+    height: 80%;
+    
+}
+
+.container-area-video {
+    background-color: white;
+    height: 80%;
+}
+
+.input {
+    
+    padding: 7px;
+    outline: none;
+    background-color: white;
+    height: 70px;
+    border-radius: 18px;
+    font: normal 20px var(--font-padrao);
+    color: rgb(0, 0, 0);
+    width: 97%;
+    font-weight: 400;
+
+}
+
+
+.input-alt-ida {
+    padding: 7px;
+    outline: none;
+    width: 95%;
+    background-color: white;
+    height: 60px;
+    border-radius: 18px;
+    font: normal 20px var(--font-padrao);
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+
+}
+
+.container-objetivo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 1%;
+}
+
+#objective-form {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    font: normal 23px var(--font-padrao);
+}
+
+#engordar {
+    margin-left: 40px;
+}
+
+#emagrecer {
+    margin-left: 40px;
+
+}
+
+
+
+.tituobjetivo {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    font: normal 23px var(--font-padrao);
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+ 
+    width: 20px;
+    height: 20px;
+  
+    border-radius:50%;
+ 
+    margin-right: 10px;
+    margin-bottom: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #ee282888;
+    box-shadow: inset 0px 6px 3px 0px rgba(0, 0, 0, .3), 0px 1px 5px 0px rgba(255, 255, 255, 0.8);
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+    
+}
+
+
+.container-idade-altura {
+    margin-top: 10px;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.idade {
+    margin-right: 5%;
+}
+
+.altura {
+    margin-right: 1%;
+}
+
+.container-objetivo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.container-botaoCalc-Result {
+    margin-top: 10px;
+    margin-left: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: black;
+}
+
+
+.borda-inversa:hover {
+    cursor: pointer;
+    
+}
+
+.borda-inversa {
+    
+    margin-left: -2%;
+    padding: 15px;
+    margin-top: 20px;
+    font: normal 30px var(--font-padrao);
+    border-radius: 18px;
+    color: white;
+    max-width: 90%;
+    width: 100%;
+    background-color: #00bf62;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0); 
+}
+
+.borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+    background: none;
+    color: #00bf62;
+}
+
+.resultado {
+    margin-right: 6%;
+    margin-left: -3%;
+
+}
+.video-manter, .video-emagrecer, .video-engordar{
+    display: none;
+    overflow-x: scroll;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
+}
+.img-video0{
+    display: flex;
+    
+    box-shadow: black 2px 2px;
+    border: solid black 1px;
+    border-radius: 13px;
+    margin: 10px;
+    width: 250px;
+}
+.mostraresultado {
+    background-color: white;
+    padding: 7%;
+    border-radius: 18px;
+    transition: 900ms;
+
+}
+
+.button-objetivo:hover {
+    cursor: pointer;
+}
+
+
+
+/* @MEDIA */
+@media (max-width:1163px) {
+
+    .mostraresultado {
+        background-color: white;
+        border-radius: 18px;
+        margin-left: 2%;
+    }
+
+    .borda-inversa {
+        padding: 15px;
+        margin-top: 38px;
+        font: normal 30px var(--font-padrao);
+        border-radius: 18px;
+        color: white;
+        width: 100%;
+        max-width: 92%;
+        background-color: #00bf62;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-property: background;
+        transition-property: background;
+        box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0); 
+    }
+    
+
+    h2 {
+        font: lighter 35px var(--font-padrao);
+    }
+
+    h3 { 
+        font: normal 26px var(--font-padrao);
+    }
+
+    section .container-form-calc {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+        font: normal 20px var(--font-padrao);
+        background-color: white;
+        border-radius: 18px;
+    }
+
+    section .container-area-video {
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+        font: normal 20px var(--font-padrao);
+        background-color: white;
+        border-radius: 18px;
+
+
+    }
+
+    .container-coluna {
+        margin-bottom: 100px;
+    }
+
+    .container-calc-video {
+        grid-template-columns: auto;
+        margin: 100px 35px;
+    }
+
+    .container-form-calc {
+        background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+        height: 80%;
+        
+    }
+    .container-area-video {
+        background-color: white;
+        height: 90%;
+    }
+
+    .input {
+        padding: 7px;
+        width: 98%;
+        background-color: white;
+        height: 60px;
+        border-radius: 18px;
+        font: normal 20px var(--font-padrao);
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        transition: 900ms;
+        
+    }
+
+    .input-alt-ida {
+        padding: 7px;
+        outline: none;
+        width: 95%;
+        background-color: white;
+        height: 60px;
+        border-radius: 18px;
+        font: normal 20px var(--font-padrao);
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+    }
+    
+    
+    
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flis | Saúde</title>
+    <link rel="shortcut icon" href="../img/flis.png" type="image/x-icon">    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/saude.css">
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/saude.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../img/logo.png" class="logo"></a>
+        <img src="../img/menu.png" alt="Icon Menu" class="menu-icon">
+        <nav class="nav-header">
+            <ul>
+                <li><a href="saude.html">Saúde</a></li>
+                <li id="menu-margem"><a href="videos.html">Educacional</a></li>
+                <li class="dropdown dropbtn">
+                    <div class="fitnessNav">Fitness</div>
+                    <div class="dropdown-content">
+                        <a href="alimentacao.html">Alimentação</a>
+                        <a href="calculadora.html">Calculadora</a>
+                        <a href="calendario.html">Calendário</a>
+                    </div>
+                </li>
+                <li><a href="../../index.html" class="inicio">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="container-saude">
+                <div class="container-coluna">
+                    <h2 class="titulo-saude">Diário da saúde</h2>
+                    <div class="container-sintomas">
+                        <h3>Descreva aqui seus sintomas:</h3>
+                        <textarea id="text-sintomas" rows="15" placeholder=""></textarea>
+                        <button class="borda-inversa" id="btn-analizar">Analisar</button>
+                    </div>
+                </div>
+                <div class="container-coluna">
+                    <h2 class="titulo-resultado">Resultado</h2>
+                    <div class="container-resultado">
+                        <h3>Resultado analisado por IA:</h3>
+                        <p><span id="text-resultado"></span><span class="text-barrinha">|</span></p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados a Flis ©</p>
+    </footer>
+</body>
+</html>

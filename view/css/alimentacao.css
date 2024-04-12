@@ -1,0 +1,274 @@
+:root {
+    --corPagExercicio: #ededed;
+    --font-padrao: 'Raleway', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--corPagExercicio);
+}
+
+/* Estilos para o banner */
+.banner {
+    background: url('seu_banner_image.jpg') center/cover no-repeat; /* Substitua 'seu_banner_image.jpg' pela imagem do seu banner */
+    text-align: center;
+    color: white;
+    padding: 50px 0; /* Ajuste o espaçamento conforme necessário */
+}
+
+.banner .titulo-alimento {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.banner .container-alimento {
+    background: rgba(255, 255, 255, 0.7); /* Fundo branco semi-transparente para legibilidade */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para o container-calc-video */
+/* Estilos para o container-calc-video */
+.container-calc-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container-coluna {
+    width: calc(50% - 10px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0 5px;
+}
+
+.container-frutas,
+.container-imagens {
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Defina a altura para 'auto' para que os elementos ajustem à altura do conteúdo */
+}
+
+
+@media (max-width: 768px) {
+    .container-calc-video {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-coluna {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+
+h2 {
+    padding: 6px 22px;
+    font: 470 35px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: center;
+    border-radius: 18px;
+}
+
+h3 {
+    padding: 6px 20px;
+    font: normal 30px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: justify;
+    color: white;
+}
+
+h4 {
+    padding: 6px 20px;
+    font: normal 25px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: justify;
+    color: #f84c58;
+}
+
+.titulo-alimento {
+    color: white;
+    background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+}
+
+.titulo-frutas {
+    color: white;
+    background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+}
+
+.titulo-imagem {
+    color: white;
+    background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+}
+
+.carousel {
+    background:  linear-gradient(to bottom, var(--cor4), var(--cor3)); ;
+}
+
+section .container-alimento,
+section .container-frutas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    color: red; 
+    font: normal 20px var(--font-padrao);
+    background-color: white;
+    border-radius: 18px;
+}
+
+section .container-imagens {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-centrada {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.carousel {
+    width: 80%;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-alimento {
+    background-color: white;
+    height: 80%;
+}
+
+.container-frutas {
+    background-color: white;
+    height: 80%;
+}
+
+.borda-inversa {
+    margin-left: -2%;
+    padding: 15px;
+    margin-top: 20px;
+    font: lighter 30px var(--font-padrao);
+    border-radius: 18px;
+    color: white;
+    max-width: 90%;
+    width: 100%;
+    background-color: #00bf62;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.borda-inversa:hover,
+.borda-inversa:focus,
+.borda-inversa:active {
+    background: none;
+    color: #00bf62;
+}
+
+/* @MEDIA */
+@media (max-width: 1163px) {
+    .borda-inversa {
+        padding: 15px;
+        margin-top: 38px;
+        font: lighter 30px var(--font-padrao);
+        border-radius: 18px;
+        color: white;
+        width: 100%;
+        max-width: 92%;
+        background-color: #00bf62;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-property: background;
+        transition-property: background;
+        box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0);
+    }
+
+    h2 {
+        font: lighter 35px var(--font-padrao);
+    }
+
+    h3 {
+        font: normal 26px var(--font-padrao);
+    }
+
+    h4 {
+        font: normal 26px var(--font-padrao);
+    }
+
+    section .container-form-calc,
+    section .container-area-video {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+        font: normal 20px var(--font-padrao);
+        background-color: white;
+        border-radius: 18px;
+    }
+
+    .container-coluna {
+        margin-bottom: 100px;
+    }
+
+    .container-calc-video {
+        grid-template-columns: auto;
+        margin: 100px 35px;
+    }
+
+    .container-form-calc {
+        background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+        height: 80%;
+    }
+
+    .container-area-video {
+        background-color: white;
+        height: 90%;
+    }
+
+    .slider-nav {
+    display: none;
+    }
+
+    .container-frutas {
+    color: red;
+    }
+
+}

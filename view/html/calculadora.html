@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flis | Exercícios</title>
+    <link rel="shortcut icon" href="../img/flis.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/calculadora.js"></script>
+    <link rel="stylesheet" href="../css/videos.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../img/logo.png" class="logo"></a>
+        <img src="../img/menu.png" alt="Icon Menu" class="menu-icon">
+        <nav class="nav-header">
+            <ul>
+                <li><a href="saude.html">Saúde</a></li>
+                <li id="menu-margem"><a href="videos.html">Educacional</a></li>
+                <li class="dropdown dropbtn">
+                    <div class="fitnessNav">Fitness</div>
+                    <div class="dropdown-content">
+                        <a href="alimentacao.html">Alimentação</a>
+                        <a href="calculadora.html">Calculadora</a>
+                        <a href="calendario.html">Calendário</a>
+                    </div>
+                </li>
+                <li><a href="../../index.html" class="inicio">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="container-calc-video">
+                <div class="container-coluna">
+                    <h2 class="titulo-caloria">Calculadora de calorias</h2>
+                    <div class="container-form-calc">
+                        <h3>Peso atual:</h3>
+                        <input id="peso" class="input" placeholder="Ex: 72,5">
+                            <h3 class="tituobjetivo">Objetivo:</h3> 
+                            <div class="container-objetivo">
+                                <form id="objective-form">
+                                    <input type="radio" id="manter" name="objetivo" value="manter">
+                                    <label for="manter">Manter</label>
+                            
+                                    <input type="radio" id="engordar" name="objetivo" value="engordar">
+                                    <label for="engordar">Engordar</label>
+                            
+                                    <input type="radio" id="emagrecer" name="objetivo" value="emagrecer">
+                                    <label for="emagrecer">Emagrecer</label>
+                                </form>
+                            </div>
+                        <div class="container-idade-altura">
+                            <div class="idade">
+                                <h3>Idade:</h3>
+                                <input id="idade" class="input-alt-ida" placeholder="Ex: 35 anos">
+                            </div>
+                            <div class="altura">
+                                <h3>Altura:</h3>
+                                <input id="altura" class="input-alt-ida" placeholder="Ex: 160 cm">
+                            </div>
+                        </div>
+                        <div class="container-botaoCalc-Result">
+                            <div class="area-btn-calc">
+                                <button class="borda-inversa" id="btn-calccalor">Calcular</button>
+                            </div>
+                            <div class="resultado">
+                                <h3>Resultado:</h3>
+                                <p id="resultado" class="mostraresultado"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-coluna">
+                    <h2 class="titulo-video">Vídeos</h2>
+                    <div class="video-vitrine">
+                        <div class="video-engordar">
+                        <!-- VIDEO 01 ENGORDAR -->
+                        <a href="https://www.youtube.com/watch?v=S0VWt9XJDp8&ab_channel=TuaSa%C3%BAde" target="_blank">
+                            <img src="https://i.ytimg.com/vi/S0VWt9XJDp8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAj_10aLtSblKngbefmeBNAcraf6w" alt="" class="img-video0">
+                        </a>
+                            <!-- VIDEO 02 ENGORDAR -->
+                        <a href="https://www.youtube.com/watch?v=D7USxJSVNEc&ab_channel=AngelaXavier" target="_blank">
+                            <img src="https://i.ytimg.com/vi/D7USxJSVNEc/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC20IonbYIaeyE5YsrZ2pSdcgKMxQ" alt="" class="img-video0">
+                        </a>
+                        <!-- VIDEO 03 ENGORDAR -->
+                        <a href="https://www.youtube.com/watch?v=zTtGs1bo-cU&ab_channel=NutricionistaPatriciaLeite" target="_blank">
+                            <img src="https://i.ytimg.com/vi/zTtGs1bo-cU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQVA2PxAabjotIuMOniWkhGZibtg" alt="" class="img-video0">
+                        </a>
+                        <!-- VIDEO 04 ENGORDAR -->
+                        <a href="https://www.youtube.com/watch?v=CJezM_VnqPM&ab_channel=NutricionistaPatriciaLeite" target="_blank">
+                            <img src="https://i.ytimg.com/vi/CJezM_VnqPM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4HHiADnwZCQPssCU_K_-MDPFZ_g" alt="" class="img-video0">
+                        </a>
+                        <!-- VIDEO 05 ENGORDAR -->
+                        <a href="https://www.youtube.com/watch?v=ZvEmHxnZC34&ab_channel=NutricionistaPatriciaLeite" target="_blank">
+                            <img src="https://i.ytimg.com/vi/ZvEmHxnZC34/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfGEYSmnWbt-x70UXlEngaRitVBw" alt="" class="img-video0">
+                        </a>
+                        </div>
+                        
+                        
+                        <div class="video-manter">
+                        <!-- VIDEO 01 MANTER -->
+                        <a href="https://www.youtube.com/watch?v=ZLxuW4-uoJA&ab_channel=RodrigoPolesso" target="_blank">
+                            <img src="https://i.ytimg.com/vi/ZLxuW4-uoJA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD0xwuBVrVrqYVIPNXE9I4wKqf_4w" alt="" class="img-video0">
+                        </a>
+                        <!-- VIDEO 02 MANTER -->
+                        <a href="https://www.youtube.com/watch?v=e2MxOzHmf1E&ab_channel=LeandroTwin" target="_blank">
+                            <img src="https://i.ytimg.com/vi/e2MxOzHmf1E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCIOgvP5djHDNqQuNmPZgl6-ekvGQ" alt="" class="img-video0">
+                        </a>
+                        <!-- VIDEO 03 MANTER -->
+                        <a href="https://www.youtube.com/watch?v=i7pQWbbEHPQ&ab_channel=MarcioAtalla" target="_blank">
+                            <img src="https://i.ytimg.com/vi/i7pQWbbEHPQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADPtfUwyaWafKEtldY1h1JKoxrOw" alt="" class="img-video0">
+                        </a>
+                        <!-- VIDEO 04 MANTER -->
+                        <a href="https://www.youtube.com/watch?v=gFzZ9uRRo9E&ab_channel=EndocrinologistaDra.RenataGon%C3%A7alvesCampos" target="_blank">
+                            <img src="https://i.ytimg.com/vi/gFzZ9uRRo9E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADSyYz_5QXyH5pqsg8x8kAWlMtVw" alt="" class="img-video0">
+                        </a>
+                        <!-- VIDEO 05 MANTER -->
+                        <a href="https://www.youtube.com/watch?v=1H3uuTfTttA&pp=ygUNbWFudGVyIG8gcGVzbw%3D%3D&ab_channel=MaluPerini" target="_blank">
+                            <img src="https://i.ytimg.com/vi/1H3uuTfTttA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCg4epZ2ris5ZM3t-X29NW4cDh68A" alt="" class="img-video0">
+                        </a>
+                          
+                        </div>
+        
+                        <!-- VIDEO 01 EMAGRECER -->
+                        <div class="video-emagrecer">
+                            
+                            <a href="https://www.youtube.com/watch?v=riqAyv0iImA&pp=ygUJRU1BR1JFQ0VS&ab_channel=MaxTitanium" target="_blank">
+                                  <img src="https://i.ytimg.com/vi/riqAyv0iImA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGv97jxRCy8qtc_XpzvFwRqmigvw" alt="" class="img-video0">
+                            </a>
+                        <!-- VIDEO 02 EMAGRECER -->
+                            <a href="https://www.youtube.com/watch?v=aKrtrjyb2E8&ab_channel=Ol%C3%A1%2CCi%C3%AAncia%21" target="_blank">
+                                <img src="https://i.ytimg.com/vi/aKrtrjyb2E8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC1PqqEiCRHiF2ZgSGsOCs9xDLQ9g" alt="" class="img-video0">
+                            </a>
+                        <!-- VIDEO 03 EMAGRECER -->
+                            <a href="https://www.youtube.com/watch?v=fG960ShGWo0&ab_channel=PauloMuzy" target="_blank">
+                                <img src="https://i.ytimg.com/vi/fG960ShGWo0/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAARCMh6ELJBT6m7wKMzGA5XKOhUA" alt="" class="img-video0">
+                            </a>
+                        <!-- VIDEO 04 EMAGRECER -->
+                        <a href="https://www.youtube.com/watch?v=fG960ShGWo0&ab_channel=PauloMuzy" target="_blank">
+                            <img src="https://i.ytimg.com/vi/6X8J305miUA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnAgla27ckhChwkVhvqnKTYnintg" alt="" class="img-video0">
+                        </a>
+
+                        <!-- VIDEO 05 EMAGRECER -->
+                        <a href="https://www.youtube.com/watch?v=gD7ihIR9V8A&ab_channel=LeandroTwin" target="_blank">
+                            <img src="https://i.ytimg.com/vi/gD7ihIR9V8A/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXjsVLJ6HjsxZi23Cg7tNVeT6kPg" alt="" class="img-video0">
+                        </a>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </section>
+        </article>
+    </main>
+    <br><br>
+    <footer>
+        <p>Todos os direitos reservados a Flis ©</p>
+    </footer>
+</body>
+</html>
