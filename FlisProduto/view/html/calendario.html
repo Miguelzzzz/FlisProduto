@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flis | calendario</title>
+    <link rel="shortcut icon" href="../img/flis.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calendario.css">
+    <script defer src="../js/script.js"></script>
+    <script src="../js/lembrete.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../img/logo.png" class="logo"></a>
+        <img src="../img/menu.png" alt="Icon Menu" class="menu-icon">
+        <nav class="nav-header">
+            <ul>
+                <li><a href="saude.html">Saúde</a></li>
+                <li id="menu-margem"><a href="videos.html">Educacional</a></li>
+                <li class="dropdown dropbtn">
+                    <div class="fitnessNav">Fitness</div>
+                    <div class="dropdown-content">
+                        <a href="alimentacao.html">Alimentação</a>
+                        <a href="calculadora.html">Calculadora</a>
+                        <a href="calendario.html">Calendário</a>
+                    </div>
+                </li>
+                <li><a href="../../index.html" class="inicio">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+            <div class="lembrete"> 
+                <h2>Lembretes</h2> 
+                <div class="lembretes">
+                    <div class="lembrete-criado"></div>
+                    <button class="button-lembrete">Criar lembrete</button>
+                </div>
+            </div> 
+            
+            <iframe src="../iframe/iframe.html" id="iframe"></iframe>
+        </section>
+        <div class="inserir-info">
+            <img src="../img/sair.png" id="img-sair">
+            <label>O que deseja anotar?</label>
+            <input type="text" id="input-txt">
+            <label>Data</label>
+            <input type="date" id="input-data">
+            <button class="button-lembrete" id="btn-info">Adicionar</button>
+        </div>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados a Flis ©</p>
+    </footer>
+</body>
+</html>
